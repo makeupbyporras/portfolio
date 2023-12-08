@@ -38,13 +38,13 @@ nav {
     background-color: var(--rosa-claro) !important;
 }
 
-.zoom {
+/* .zoom {
     transition: transform 1.5s;
 }
 
 .zoom:hover {
     transform: scale(1.5);
-}
+} */
 
 .translate-middle {
     margin-top: auto;
@@ -63,6 +63,12 @@ nav {
 .title_principal {
     font-family: 'Qwigley', cursive;
     font-size: 110px;
+    text-align: center;
+}
+
+.title_secundario {
+    font-family: 'Qwigley';
+    font-size: 40px;
     text-align: center;
 }
 
