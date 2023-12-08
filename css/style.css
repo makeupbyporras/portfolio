@@ -1,0 +1,141 @@
+:root {
+    --rosa-palo: #FFD3E0;
+    --rosa-claro: #d8b6b6;
+    --rosa-medio: #FF94A1;
+    --rosa-vibrante: #FF6680;
+    --blanco: #FFFFFF;
+    --gris-suave: #F2F2F2;
+    --verde: #43574d;
+}
+
+@import url('/fonts/Qwigley-Regular.ttf');
+@import url('/fonts/Jura-Regular.ttf');
+
+
+body {
+    font-family: 'Jura', monospace;
+}
+
+nav {
+    font-family: 'Lato';
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--rosa-claro);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--rosa-claro);
+}
+
+.bg-success {
+    background-color: var(--verde) !important;
+}
+
+.bg-danger {
+    background-color: var(--rosa-claro) !important;
+}
+
+.zoom {
+    transition: transform 1.5s;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+.translate-middle {
+    margin-top: auto;
+    transform: translate(-50%, -90%) !important;
+}
+
+.translate-middle-title {
+    margin-top: auto;
+    transform: translate(-50%, -45%) !important;
+}
+
+.altura_home {
+    min-height: 65vh;
+}
+
+.title_principal {
+    font-family: 'Qwigley', cursive;
+    font-size: 110px;
+    text-align: center;
+}
+
+.start_title {
+    right: -50% !important;
+    left: 50% !important;
+}
+
+.text-danger {
+    color: var(--rosa-claro) !important;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 530px;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+.whatsapp-icon {
+    margin-top:13px;
+  }
+@media only screen and (max-width: 500px) {
+    .img_head {
+        width: 100%;
+        height: 100%;
+    }
+
+    .altura_home {
+        min-height: 12vh;
+    }
+
+    .start-50 {
+        right: -50% !important;
+        left: 50% !important;
+    }
+
+    .translate-middle {
+        transform: translate(-50%, -50%) !important;
+    }
+
+    .title_principal {
+        font-size: 60px;
+    }
+
+    /* .translate-middle-title {
+        transform: translate(-50%, -45%) !important;
+    } */
+}
