@@ -6,6 +6,7 @@ if (formContact) {
 
 function enviarMensaje(e) {
   e.preventDefault();
+  let form = e.target;
   const btnEnviar = document.getElementById("btnEnviar");
   btnEnviar.disabled = true;
   btnEnviar.innerHTML = "<span class='spinner-border spinner-border-sm' aria-hidden='true'></span> Enviando";
@@ -21,6 +22,7 @@ function enviarMensaje(e) {
         text: "Mensaje Enviado!",
         icon: "success",
       });
+      form.reset();
     },
     (err) => {
       btnEnviar.innerHTML = "Enviar";
