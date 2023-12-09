@@ -165,8 +165,8 @@
                 </div>
             </div>
             <div id="contact">
-                <div class="py-4 text-center">
-                    <h1 class="fw-bold text-danger title_principal">Contactame</h1>
+                <div class="py-4 text-center container">
+                    <h1 class="fw-bold text-danger title_principal">Contáctame</h1>
                     <p>¡Ponte en contacto para reservar una consulta de maquillaje gratuita!</p>
                     <!--<div><span class="fw-bold">EMAIL</span> | <a
                             href="mailto:georyanaporras@gmail.com">georyanaporras@gmail.com</a></div>
@@ -176,15 +176,19 @@
                             <form action="" method="post" id="formContact">
                                 <input type="hidden" name="subject" id="subject" value="Solicitud de Cortización">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="number" class="form-control" id="celular" name="celular"
+                                        placeholder="Número Celular" required>
                                 </div>
                                 <div class="mb-3">
                                     <input type="email" class="form-control" id="email" name="email"
-                                        placeholder="Correo Electronico">
+                                        placeholder="Correo Electrónico (Opcional)" required>
                                 </div>
                                 <div class="mb-3">
                                     <textarea class="form-control" id="message" name="message" rows="3"
-                                        placeholder="Mensaje"></textarea>
+                                        placeholder="Mensaje (Opcional)"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary" id="btnEnviar">
                                     Enviar
