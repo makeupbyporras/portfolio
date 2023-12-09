@@ -1,0 +1,136 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 80%;
+        }
+
+        .container {
+            display: block;
+            margin: 0 auto !important;
+            /* makes it centered */
+            max-width: 580px;
+            padding: 10px;
+            width: 580px;
+        }
+
+        .content {
+            box-sizing: border-box;
+            display: block;
+            margin: 0 auto;
+            max-width: 580px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .content-mensaje {
+            padding: 50px;
+            padding-bottom: 10px;
+        }
+
+        .align-right {
+            text-align: right;
+        }
+
+        .align-left {
+            text-align: left;
+        }
+
+        .text-primary {
+            color: #b69595;
+        }
+
+        .text-secondary {
+            color: #686868b2;
+        }
+
+        .footer {
+            background: #b69595;
+            height: auto;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            color: white;
+            padding-left: 50px;
+        }
+
+        .footer>div>p {
+            font-size: small;
+        }
+
+        .col-8 {
+            width: 65%;
+        }
+
+        .col-4 {
+            width: 35%;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .container {
+                max-width: 100%;
+                width: auto;
+                padding: 5px;
+            }
+
+            .content {
+                border-radius: 0;
+                /* Elimina el borde redondeado en pantallas pequeñas si lo deseas */
+            }
+
+            .footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .align-left,
+            .align-right {
+                width: 100%;
+            }
+
+            .col-8,
+            .col-4 {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body style="padding: 16px; background-color: #e2e7ea; color: #444242;font-family: 'Lato', sans-serif;">
+    <div class="container">
+        <div class="content">
+            <div class="content-mensaje">
+                <h2 class="text-primary">Hola, </h2>
+                Has recibido el siguiente mensaje.
+                <p><q>{{message}}</q></p>
+                <h3>Datos del remitente:</h3>
+                <p>
+                    <b class="text-secondary">Nombre: </b>{{name}} <br>
+                    <b class="text-secondary">Email: </b> {{email}} <br>
+                </p>
+                <h4>Gracias.</h4>
+            </div>
+            <div class="footer">
+                <div class="align-left">
+                    <p>Copyright © 2023. Desarrollado por F.J. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

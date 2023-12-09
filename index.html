@@ -78,11 +78,11 @@
             <div id="services">
                 <div class="bg-danger py-4">
                     <div class="container-lg text-center py-2">
-                        <h1 class="text-light mb-4">SERVICIOS</h1>
+                        <h1 class="text-light fw-bold mb-4">SERVICIOS</h1>
                         <div class="row row-cols-1 row-cols-sm-3 justify-content-center">
                             <div class="col col-md-4 col-lg-3 py-2">
                                 <div class="card border-0 p-2">
-                                    <img src="images/GPFondoBlanco2.jpg" class="card-img-top" alt="...">
+                                    <img src="images/eventos.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h4 class="text-secondary fw-bold title_secundario">Eventos Especiales</h4>
                                         <p class="card-text text-body-secondary">Celebra momentos inolvidables con
@@ -95,7 +95,7 @@
                             </div>
                             <div class="col col-md-4 col-lg-3 py-2">
                                 <div class="card border-0 p-2">
-                                    <img src="images/CaperucitaFondoBlanco.jpg" class="card-img-top" alt="...">
+                                    <img src="images/artistico.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h4 class="text-secondary fw-bold title_secundario">Fantasía y Creatividad</h4>
                                         <p class="card-text text-body-secondary">Exploramos límites creativos, desde
@@ -108,12 +108,13 @@
                             </div>
                             <div class="col col-md-4 col-lg-3 py-2">
                                 <div class="card border-0 p-2">
-                                    <img src="images/automaquillajeFondoBlanco.jpg" class="card-img-top" alt="...">
+                                    <img src="images/automaquillaje.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h4 class="text-secondary fw-bold title_secundario">Automaquillaje</h4>
                                         <p class="card-text text-body-secondary">Aprende los secretos del maquillaje con
                                             nuestro curso personalizado. Desde técnicas básicas hasta trucos
-                                            profesionales, te empoderaremos para realzar tu belleza natural. Crea looks que te hagan sentir
+                                            profesionales, te empoderaremos para realzar tu belleza natural. Crea looks
+                                            que te hagan sentir
                                             confiada en cualquier ocasión.</p>
                                     </div>
                                 </div>
@@ -123,27 +124,33 @@
                 </div>
             </div>
             <div id="portfolio">
-                <div class="bg-success py-4">
+                <div class="py-4">
                     <div class="container text-center py-2">
-                        <h1 class="text-light mb-5 fw-bold">PORTAFOLIO</h1>
+                        <h1 class="text-secondary mb-5 fw-bold">PORTAFOLIO</h1>
                         <div class="row row-cols-2 row-cols-md-3 justify-content-center">
-                            <div class="col py-2 bg-white">
-                                <img src="images/GP_maquillaje.png" class="img-fluid zoom" alt="">
+                            <div class="col py-2">
+                                <img src="images/portafolio/eventos/GPFondoBlanco2.jpg"
+                                    class="img-fluid rounded shadow zoom" alt="">
                             </div>
-                            <div class="col py-2 bg-white">
-                                <img src="images/GP_payaso.png" class="img-fluid zoom" alt="">
+                            <div class="col py-2">
+                                <img src="images/portafolio/eventos/GPFondoBlanco2.jpg"
+                                    class="img-fluid rounded shadow zoom" alt="">
                             </div>
-                            <div class="col py-2 bg-white">
-                                <img src="images/GP_Vampira.jpg" class="img-fluid zoom" alt="">
+                            <div class="col py-2">
+                                <img src="images/portafolio/eventos/GPFondoBlanco2.jpg"
+                                    class="img-fluid rounded shadow zoom" alt="">
                             </div>
-                            <div class="col py-2 bg-white">
-                                <img src="images/GP_Vampira.jpg" class="img-fluid zoom" alt="">
+                            <div class="col py-2">
+                                <img src="images/portafolio/artistico/CaperucitaFondoBlanco.jpg"
+                                    class="img-fluid rounded shadow zoom" alt="">
                             </div>
-                            <div class="col py-2 bg-white">
-                                <img src="images/GP_maquillaje.png" class="img-fluid zoom" alt="">
+                            <div class="col py-2">
+                                <img src="images/portafolio/artistico/CaperucitaFondoBlanco.jpg"
+                                    class="img-fluid rounded shadow zoom" alt="">
                             </div>
-                            <div class="col py-2 bg-white">
-                                <img src="images/GP_payaso.png" class="img-fluid zoom" alt="">
+                            <div class="col py-2">
+                                <img src="images/portafolio/artistico/CaperucitaFondoBlanco.jpg"
+                                    class="img-fluid rounded shadow zoom" alt="">
                             </div>
                         </div>
                     </div>
@@ -153,13 +160,36 @@
                 <div class="py-4 text-center">
                     <h1 class="fw-bold text-danger title_principal">Contactame</h1>
                     <p>¡Ponte en contacto para reservar una consulta de maquillaje gratuita!</p>
-                    <div><span class="fw-bold">EMAIL</span> | <a href="mailto:georyanaporras@gmail.com">georyanaporras@gmail.com</a></div>
-                    <!--<div><span class="fw-bold">TELEFONO</span> | 3141112233</div>-->
+                    <!--<div><span class="fw-bold">EMAIL</span> | <a
+                            href="mailto:georyanaporras@gmail.com">georyanaporras@gmail.com</a></div>
+                    <div><span class="fw-bold">TELEFONO</span> | 3141112233</div>-->
+                    <div class="row justify-content-center my-5">
+                        <div class="col-md-5">
+                            <form action="" method="post" id="formContact">
+                                <input type="hidden" name="subject" id="subject" value="Solicitud de Cortización">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Correo Electronico">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="message" name="message" rows="3"
+                                        placeholder="Mensaje"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary" id="btnEnviar">
+                                    Enviar
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-    <footer class="text-center py-4 bg-danger text-light">
+    <footer class="text-center py-4 bg-secondary text-light">
         <div class="row justify-content-center mt-3">
             <div class="col-2 text-end">
                 <a href="https://www.instagram.com/makeup.byporrass/" target="_blank" class="link-light"><i
@@ -183,5 +213,11 @@
 </body>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    emailjs.init('_LuNvGZ1wbdVWiGAB')
+</script>
+<script src="js/sweetalert2.js"></script>
+<script src="js/index.js" type="module"></script>
 
 </html>

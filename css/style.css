@@ -1,11 +1,10 @@
 :root {
-    --rosa-palo: #FFD3E0;
-    --rosa-claro: #d8b6b6;
-    --rosa-medio: #FF94A1;
-    --rosa-vibrante: #FF6680;
+    --rosa: #d8b6b6;
+    --rosa-claro: #eccccc;
+    --rosa-oscuro: #b69595;
     --blanco: #FFFFFF;
-    --gris-suave: #F2F2F2;
     --verde: #43574d;
+    --gris: #686868b2;
 }
 
 @import url('/fonts/Qwigley-Regular.ttf');
@@ -22,12 +21,12 @@ nav {
 
 .nav-link:focus,
 .nav-link:hover {
-    color: var(--rosa-claro);
+    color: var(--rosa);
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    color: var(--rosa-claro);
+    color: var(--rosa);
 }
 
 .bg-success {
@@ -35,7 +34,11 @@ nav {
 }
 
 .bg-danger {
-    background-color: var(--rosa-claro) !important;
+    background-color: var(--rosa) !important;
+}
+
+.bg-secondary {
+    background-color: var(--rosa-oscuro) !important;
 }
 
 /* .zoom {
@@ -78,7 +81,38 @@ nav {
 }
 
 .text-danger {
-    color: var(--rosa-claro) !important;
+    color: var(--rosa-oscuro) !important;
+}
+
+.rounded {
+    border-radius: 25px !important;
+}
+
+.form-control {
+    color: var(--rosa-oscuro);
+    
+}
+
+.form-control::placeholder {
+    color: var(--gris);
+}
+
+.form-control:focus {
+    color: var(--rosa-oscuro) !important;
+    border-color: var(--rosa-claro);
+    box-shadow: 0 0 0 .15rem var(--rosa-claro);
+}
+
+.btn-primary, .btn-primary:active {
+    color: var(--rosa-oscuro);
+    background-color: var(--rosa-claro) !important;
+    border-color: var(--rosa-claro) !important;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: var(--rosa-oscuro) !important;
+    border-color: var(--rosa-oscuro) !important;
 }
 
 section {
@@ -115,9 +149,11 @@ section img:hover {
     font-size: 30px;
     z-index: 100;
 }
+
 .whatsapp-icon {
-    margin-top:13px;
-  }
+    margin-top: 13px;
+}
+
 @media only screen and (max-width: 500px) {
     .img_head {
         width: 100%;
