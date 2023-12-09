@@ -129,36 +129,55 @@
                         <h1 class="text-secondary mb-5 fw-bold">PORTAFOLIO</h1>
                         <div class="row row-cols-2 row-cols-md-3 justify-content-center">
                             <div class="col py-2">
-                                <img src="images/portafolio/eventos/enventos1.jpg"
-                                    class="img-fluid rounded shadow zoom" alt="">
+                                <img src="images/portafolio/eventos/enventos1.jpg" class="img-fluid rounded shadow zoom"
+                                    alt="" data-bs-toggle="modal" data-bs-target="#modalImg">
                             </div>
                             <div class="col py-2">
-                                <img src="images/portafolio/eventos/enventos2.jpg"
-                                    class="img-fluid rounded shadow zoom" alt="">
+                                <img src="images/portafolio/eventos/enventos2.jpg" class="img-fluid rounded shadow zoom"
+                                    alt="" data-bs-toggle="modal" data-bs-target="#modalImg">
                             </div>
                             <div class="col py-2">
-                                <img src="images/portafolio/eventos/enventos3.jpg"
-                                    class="img-fluid rounded shadow zoom" alt="">
+                                <img src="images/portafolio/eventos/enventos3.jpg" class="img-fluid rounded shadow zoom"
+                                    alt="" data-bs-toggle="modal" data-bs-target="#modalImg">
                             </div>
                             <div class="col py-2">
                                 <img src="images/portafolio/eventos/GPFondoBlanco2.jpg"
-                                    class="img-fluid rounded shadow zoom" alt="">
+                                    class="img-fluid rounded shadow zoom" alt="" data-bs-toggle="modal"
+                                    data-bs-target="#modalImg">
                             </div>
                             <div class="col py-2">
                                 <img src="images/portafolio/artistico/artistico1.jpg"
-                                    class="img-fluid rounded shadow zoom" alt="">
+                                    class="img-fluid rounded shadow zoom" alt="" data-bs-toggle="modal"
+                                    data-bs-target="#modalImg">
                             </div>
                             <div class="col py-2">
                                 <img src="images/portafolio/artistico/artistico2.jpg"
-                                    class="img-fluid rounded shadow zoom" alt="">
+                                    class="img-fluid rounded shadow zoom" alt="" data-bs-toggle="modal"
+                                    data-bs-target="#modalImg">
                             </div>
                             <div class="col py-2">
                                 <img src="images/portafolio/artistico/artistico3.jpg"
-                                    class="img-fluid rounded shadow zoom" alt="">
+                                    class="img-fluid rounded shadow zoom" alt="" data-bs-toggle="modal"
+                                    data-bs-target="#modalImg">
                             </div>
                             <div class="col py-2">
                                 <img src="images/portafolio/artistico/CaperucitaFondoBlanco.jpg"
-                                    class="img-fluid rounded shadow zoom" alt="">
+                                    class="img-fluid rounded shadow zoom" alt="" data-bs-toggle="modal"
+                                    data-bs-target="#modalImg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalImg" tabindex="-1" aria-labelledby="modalImg" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="#" id="imagenModal" class="img-fluid" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
                             </div>
                         </div>
                     </div>
@@ -176,7 +195,8 @@
                             <form action="" method="post" id="formContact">
                                 <input type="hidden" name="subject" id="subject" value="Solicitud de Cortización">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre"
+                                        required>
                                 </div>
                                 <div class="mb-3">
                                     <input type="number" class="form-control" id="celular" name="celular"

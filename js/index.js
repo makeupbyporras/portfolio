@@ -31,7 +31,19 @@ function enviarMensaje(e) {
         text: "Error en el envio del mensaje, puedes optar por contactar via WhatsApp!",
         icon: "error",
       });
-      alert(JSON.stringify(err));
     }
   );
+}
+
+const zoom = document.querySelectorAll(".zoom");
+if (zoom.length) {
+    zoom.forEach((element)=>{
+        element.addEventListener("click", agregarImagenModal);
+    });
+}
+
+function agregarImagenModal(e) {
+    let url_imagen = e.target.src;
+    let imagenModal = document.getElementById("imagenModal");
+    imagenModal.src = url_imagen;
 }
